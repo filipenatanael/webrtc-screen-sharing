@@ -1,28 +1,62 @@
 <!doctype html>
 <html>
-  <head>
-    <title>WebRTC Tutorial Alice</title>
-    <link rel="stylesheet" type="text/css" href="./../main.css">
-  </head>
-  <body>
 
-        
-    <ul id="messages"></ul>
+<head>
+    <title>WebRTC Chat ( Alice )</title>
+    <link rel="stylesheet" type="text/css" href="./../main.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+
+<body>
+    <!------ Include the above in your HEAD tag ---------->
+    <div class="chat_window">
+        <div class="top_menu">
+            <div class="buttons">
+                <div class="button close"></div>
+                <div class="button minimize"></div>
+                <div class="button maximize"></div>
+            </div>
+            <div class="title">Chat</div>
+        </div>
+        <ul id="messages" class="messages"></ul>
+        <form action="">
+            <div class="bottom_wrapper clearfix">
+                <div class="message_input_wrapper">
+                    <input id="m" class="message_input" placeholder="Type your message here..." />
+                </div>
+                <div class="send_message">
+                    <div class="icon"></div>
+                    <div class="text" id="m_submit">Send</div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="message_template">
+        <li class="message">
+            <div class="avatar"></div>
+            <div class="text_wrapper">
+                <div class="text"></div>
+            </div>
+        </li>
+    </div>
+
+
+    <!-- <ul id="messages"></ul>
     <form action="">
       <input id="m" placeholder="Your message here" autocomplete="off" />
       <button id="m_submit" type="submit">Send</button>
       <button id="web_rtc_button">Make visio</button>
       
       <video id="remoteVideo" controls autoplay height="225" width="300"></video>
-    </form>
-    
+    </form> -->
+
+
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-
     <script src="./js/reactorPattern.js"></script>
-<!--
+    <!--
     <script src="https://cdn.temasys.com.sg/adapterjs/0.11.x/adapter.debug.js"></script>-->
-  <!-- <script src="https://cdn.temasys.com.sg/adapterjs/0.13.x/adapter.debug.js"></script>
+    <!-- <script src="https://cdn.temasys.com.sg/adapterjs/0.13.x/adapter.debug.js"></script>
     <script src="https://cdn.temasys.com.sg/adapterjs/0.13.x/adapter.screenshare.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/adapterjs/0.15.4/adapter.screenshare.js"></script>
     <script src="./js/socket.js"></script>
@@ -30,6 +64,9 @@
     <script src="./js/webRTC.js"></script>
 
     <script src="./js/webRTCDataChannel.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-  </body>
+</body>
+
 </html>
