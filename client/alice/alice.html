@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>WebRTC Chat ( Alice )</title>
+    <title>WebRTC Chat</title>
     <link rel="stylesheet" type="text/css" href="./../main.css">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 </head>
@@ -16,7 +16,7 @@
                 <div class="button minimize"></div>
                 <div class="button maximize"></div>
             </div>
-            <div class="title">Chat</div>
+            <div class="title">I AM ALICE</div>
         </div>
         <ul id="messages" class="messages"></ul>
         <form action="">
@@ -24,13 +24,21 @@
                 <div class="message_input_wrapper">
                     <input id="m" class="message_input" placeholder="Type your message here..." />
                 </div>
-                <div class="send_message">
-                    <div class="icon"></div>
-                    <div class="text" id="m_submit">Send</div>
+                <div class="bottom_container">
+                    <div class="send_message">
+                        <div class="icon"></div>
+                        <div class="text">Send</div>
+                    </div>
+                    <div class="send_message">
+                        <div class="icon"></div>
+                        <div class="text" id="web_rtc_button">Camera</div>
+                    </div>
                 </div>
             </div>
         </form>
     </div>
+    <video id="remoteVideo" controls autoplay height="300" width="450"></video>
+
     <div class="message_template">
         <li class="message">
             <div class="avatar"></div>
