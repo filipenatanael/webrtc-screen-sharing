@@ -14,7 +14,7 @@ body {
     height: 500px;
     border-radius: 10px;
     background-color: #fff;
-    left: 50%;
+    left: 35%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -179,7 +179,7 @@ body {
     height: 50px;
     border-radius: 25px;
     border: 1px solid #bcbdc0;
-    width: calc(100% - 160px);
+    width: calc(100% - 300px);
     position: relative;
     padding: 0 20px;
 }
@@ -220,6 +220,17 @@ body {
     line-height: 48px;
 }
 
+.bottom_container {
+    float: right;
+}
+
 .message_template {
     display: none;
+}
+
+video {
+    /* display: block !important; */
+    float: right;
+    margin-top: 120px;
+    margin-right: 30px;
 }
