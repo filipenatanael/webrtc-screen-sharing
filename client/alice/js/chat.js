@@ -37,7 +37,7 @@
 
 	$("#m_submit").click(function(event){
 		seedMessage()
-	 })
+	});
 
 	socket.on('CHAT_MESSAGE', function(msg){
 		var msg = JSON.parse(msg);
