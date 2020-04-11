@@ -13,4 +13,3 @@ npm install -g strongloop
 ```
 slc run
 ```
-That start the server on: http://0.0.0.0:3000/
