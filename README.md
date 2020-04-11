@@ -8,8 +8,3 @@ It's use a loopback server with socket.io in order to make relay between clients
 ```
 npm install -g strongloop
 ```
-
-# run loopbackchat
-```
-slc run
-```
